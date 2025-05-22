@@ -26,7 +26,7 @@
                         </a>
 
                         <!-- Articles Card -->
-                        <a href="{{ route('articles') }}" class="block p-6 transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-lg dark:bg-gray-700">
+                        <a href="{{ route('articles.index') }}" class="block p-6 transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-lg dark:bg-gray-700">
                             <div class="flex items-center justify-between">
                                 <div>
                                     <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Articles</h3>
@@ -41,7 +41,7 @@
                         </a>
 
                         <!-- Products Card -->
-                        <a href="{{ route('products') }}" class="block p-6 transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-lg dark:bg-gray-700">
+                        <a href="{{ route('products.index') }}" class="block p-6 transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-lg dark:bg-gray-700">
                             <div class="flex items-center justify-between">
                                 <div>
                                     <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Products</h3>

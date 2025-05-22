@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,13 +22,11 @@ Route::middleware('auth')->group(function () {
         return view('category.index');
     })->name('category');
 
-    Route::get('/articles', function () {
-        return view('articles.index');
-    })->name('articles');
+    Route::resource('articles', ArticleController::class);
+    Route::get('/articles/create', [ArticleController::class, 'create'])->name('articles.create');
 
-    Route::get('/products', function () {
-        return view('products.index');
-    })->name('products');
+    Route::resource('products', ProductController::class);
+    Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
 });
 
 require __DIR__.'/auth.php';

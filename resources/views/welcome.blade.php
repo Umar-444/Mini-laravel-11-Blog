@@ -10,7 +10,7 @@
     <div class="min-h-screen">
         <!-- Navigation -->
         <nav class="bg-white shadow-lg">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <div class="flex items-center">
                         <h1 class="text-2xl font-bold text-indigo-600">Mini Blog</h1>
@@ -29,12 +29,12 @@
 
         <!-- Hero Section -->
         <div class="bg-white">
-            <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
                         Welcome to Mini Blog Practice Project
                     </h2>
-                    <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    <p class="max-w-xl mx-auto mt-5 text-xl text-gray-500">
                         A practice project built with Laravel and Tailwind CSS
                     </p>
                 </div>
@@ -42,37 +42,37 @@
         </div>
 
         <!-- Features Section -->
-        <div class="bg-gray-100 py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="py-12 bg-gray-100">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Blog Posts -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Articles</h3>
-                        <p class="text-gray-600 mb-4">Explore our collection of articles</p>
-                        <a href="{{ route('articles') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="mb-4 text-xl font-semibold text-gray-900">Articles</h3>
+                        <p class="mb-4 text-gray-600">Explore our collection of articles</p>
+                        <a href="{{ route('articles.index') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700">
                             View Articles
                         </a>
                     </div>
 
                     <!-- Authentication -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Authentication</h3>
-                        <p class="text-gray-600 mb-4">Create an account or login to your existing one</p>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="mb-4 text-xl font-semibold text-gray-900">Authentication</h3>
+                        <p class="mb-4 text-gray-600">Create an account or login to your existing one</p>
                         <div class="space-x-4">
-                            <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700">
                                 Login
                             </a>
-                            <a href="{{ route('register') }}" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            <a href="{{ route('register') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
                                 Register
                             </a>
                         </div>
                     </div>
 
                     <!-- About -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">About</h3>
-                        <p class="text-gray-600 mb-4">Learn more about this practice project</p>
-                        <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="mb-4 text-xl font-semibold text-gray-900">About</h3>
+                        <p class="mb-4 text-gray-600">Learn more about this practice project</p>
+                        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700">
                             Learn More
                         </a>
                     </div>
@@ -81,9 +81,9 @@
         </div>
 
         <!-- Footer -->
-        <footer class="bg-white mt-12">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-gray-500 text-sm">
+        <footer class="mt-12 bg-white">
+            <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <p class="text-sm text-center text-gray-500">
                     &copy; {{ date('Y') }} MiniBlog. All rights reserved.
                 </p>
             </div>
