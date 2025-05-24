@@ -10,7 +10,10 @@
             <div class="overflow-hidden bg-white shadow-sm dark:bg-gray-800 sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-lg font-semibold">Article Information</h3>
+                        <h3 class="text-lg font-semibold">Add New Article</h3>
+                        <a href="{{ route('articles.index') }}" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+                            List of Articles
+                        </a>
                     </div>
                     <form action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                         @csrf
